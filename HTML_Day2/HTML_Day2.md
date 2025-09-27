@@ -28,7 +28,11 @@
     </table>
 </body>
 </html>
+
+
+
    ### 1.2 表格的基本用法
+
 
 ```html
 <table> 
@@ -804,3 +808,4 @@ type 属性的属性值及其描述如下：
     </table>
 </body>
 </html>
+

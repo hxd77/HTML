@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* 1.标签选择器和类选择器合起来使用----复合选择器 */
+		h1.aaa{
+			color:red;
+		}
+		/* 1.标签选择器和ID选择器合起来使用----复合选择器 */
+		p#bbb{
+			color:blue;
+		}
+		/* 2.组合选择器 */
+		h1,p,div,span,.ccc{
+			font-size:30px;
+		}
+		div{
+			background:violet;
+		}
+		.ccc{
+			font-weight:bold;
+		}
+		/* 3.嵌套选择器 */
+		/* div p{
+			color:green;
+			text-decoration:underline;
+		} */
+		div>p{
+			color:green;
+			text-decoration:underline;
+		}
+		div h3.ddd{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<!-- 需求：只想修饰class属性为aaa的h1标签 -->
+	<h1 class="aaa">welcome</h1>
+	<h4 class="aaa">css</h4>
+	<h1>hello</h1>
+	<hr>
+	<!-- 我要修饰ID属性为bbb的p标签 -->
+	<p id="bbb">world</p >
+	<p>html</p>
+	<h1 id="bbb">主讲：叽叽</h1>
+	<hr>
+	<!-- 给h1、p、div、span标签中的内容设置字号为30px -->
+	<h1>hello</h1>
+	<p>CSS</p>
+	<div>WEB开发</div>
+	<span class="ccc">JAVA开发</span>
+	<hr>
+	<!-- 需求：修饰div内部的p标签 -->
+	<div>
+		<p>div内部的p标签</p>
+		<h3>div内部的h3标签</h3>
+	</div>
+	<hr>
+	<div>
+		<h3>
+			<p>div内部的h3内部的p标签</p>
+		</h3>
+	</div>
+	<hr>
+	<!-- 需求：修饰div内部的class为ddd的标签 -->
+	<div>
+		<p>div内部的p</p>
+		<h3 class="ddd">div内部的h3</h3>
+		<p class="ddd">PPPP</p>
+	</div>
+	<h3 class="ddd">h3h3h3</h3>
+</body>
+</html>
